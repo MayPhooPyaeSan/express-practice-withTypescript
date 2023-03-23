@@ -1,0 +1,185 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&family=Didact+Gothic&family=Edu+TAS+Beginner:wght@600&family=Edu+VIC+WA+NT+Beginner:wght@500&family=Fragment+Mono:ital@1&family=Hanken+Grotesk:wght@300&family=Hind+Siliguri:wght@500&family=IBM+Plex+Sans+Arabic:wght@500&family=Inter:wght@300&family=Jost:wght@300&family=Lobster&family=Marck+Script&family=Merriweather+Sans&family=Nanum+Gothic:wght@700&family=Nunito:wght@300&family=Open+Sans:wght@300;400&family=Outfit&family=Poppins:wght@300&family=Quicksand:wght@400;500&family=Rubik&family=Work+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  /* width: 100%; */
+}
+
+/* Styles for the dark mode */
+.dark-theme {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+.dark-theme h1 {
+  color: #fff;
+}
+
+.dark-theme .imageAndtitleDiv {
+  background-color: #61ccff;
+}
+
+.dark-theme .title {
+  color: #000;
+}
+
+.dark-theme .deleteBtn {
+  background-color: #fe4f32;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+
+  color: #fff;
+}
+
+#toggle-theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: #ffc930;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+#toggle-theme:hover {
+  background-color: #fe4f32;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 5%;
+  overflow-x: auto;
+}
+
+.container > * {
+  flex-basis: calc(50% - 20px);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+h1 {
+  color: #000;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 10%;
+}
+#uploadButton {
+  background-color: #61ccff;
+  border: none;
+  color: #000;
+  font-family: monospace, cursive;
+  margin-top: 10%;
+  font-size: 20px;
+  transition: 0.5 ease-in-out;
+}
+
+#uploadButton:hover {
+  background-color: #fe4f32;
+}
+
+@media only screen and (max-width: 768px) {
+  .container > * {
+    flex-basis: 100%;
+  }
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px; /* set a max width for the container */
+  margin: 0 auto;
+  padding: 0 10px; /* reduce the padding */
+  margin-top: 10%;
+  overflow-x: auto; /* add horizontal scroll when necessary */
+}
+
+.box > * {
+  flex-basis: calc(50% - 10px); /* reduce the space between boxes */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  max-width: 500px; /* set a maximum width for the boxes */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* add a box shadow */
+}
+
+.pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  filter: brightness(130%);
+  object-fit: cover;
+  padding: 20px;
+}
+
+.imageAndtitleDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fe4f32;
+  height: 200px;
+  width: 700px;
+}
+
+.pic:hover {
+  transform: scale(1.1);
+  filter: brightness(100%);
+}
+
+.title {
+  font-size: 1rem;
+  font-family: monospace, cursive;
+  color: #000;
+}
+
+.deleteBtn {
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #61ccff;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.deleteBtn:hover {
+  background-color: #ffc930;
+}
+
+@media only screen and (max-width: 768px) {
+  .box > * {
+    flex-basis: 100%;
+  }
+}
